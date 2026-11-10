@@ -1,0 +1,110 @@
+[00:02:36] [W] Cell 'tt_um_jeffadickson_tinytmr' has (15) output       odb.py:71
+               pin(s) without antenna diffusion information. They
+               might not be driven.
+[00:02:36] [I] Gating variable for step 'KLayout.XOR' set to   sequential.py:362
+               'False'- the step will be skipped.
+[00:02:36] [I] Skipping step 'KLayout vs. Magic XOR'…          sequential.py:370
+[00:02:36] [I] Gating variable for step 'Checker.XOR' set to   sequential.py:362
+               'False'- the step will be skipped.
+[00:02:36] [I] Skipping step 'XOR Difference Checker'…         sequential.py:370
+[00:02:36] [V] Running 'Magic.DRC' at                               step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/63-m
+               agic-drc'…
+[00:02:36] [I] Logging subprocess to                                step.py:1336
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/63-m
+               agic-drc/magic-drc.log'…
+[00:02:42] [V] Running 'KLayout.DRC' at                             step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/64-k
+               layout-drc'…
+[00:02:42] [I] Running KLayout DRC with 12 threads…               klayout.py:578
+[00:02:42] [I] Logging subprocess to                                step.py:1336
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/64-k
+               layout-drc/klayout-drc.log'…
+[00:02:57] [I] Logging subprocess to                                step.py:1336
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/64-k
+               layout-drc/xml_drc_report_to_json.log'…
+[00:02:58] [V] Running 'Checker.MagicDRC' at                        step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/65-c
+               hecker-magicdrc'…
+[00:02:58] [I] Check for Magic DRC errors clear.                  checker.py:131
+[00:02:58] [V] Running 'Checker.KLayoutDRC' at                      step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/66-c
+               hecker-klayoutdrc'…
+[00:02:58] [I] Check for KLayout DRC errors clear.                checker.py:131
+[00:02:58] [V] Running 'Magic.SpiceExtraction' at                   step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/67-m
+               agic-spiceextraction'…
+[00:02:58] [I] Logging subprocess to                                step.py:1336
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/67-m
+               agic-spiceextraction/magic-spiceextraction.log'…
+[00:02:59] [V] Running 'Checker.IllegalOverlap' at                  step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/68-c
+               hecker-illegaloverlap'…
+[00:02:59] [I] Check for Magic Illegal Overlap errors clear.      checker.py:131
+[00:02:59] [V] Running 'Netgen.LVS' at                              step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/69-n
+               etgen-lvs'…
+[00:02:59] [I] Logging subprocess to                                step.py:1336
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/69-n
+               etgen-lvs/netgen-lvs.log'…
+[00:03:00] [V] Running 'Checker.LVS' at                             step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/70-c
+               hecker-lvs'…
+[00:03:00] [I] Check for LVS errors clear.                        checker.py:131
+[00:03:00] [I] Gating variable for step 'Yosys.EQY' set to     sequential.py:362
+               'False'- the step will be skipped.
+[00:03:00] [I] Skipping step 'Equivalence Check'…              sequential.py:370
+[00:03:00] [V] Running 'Checker.SetupViolations' at                 step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/71-c
+               hecker-setupviolations'…
+[00:03:00] [V] No setup violations found                          checker.py:628
+[00:03:00] [V] Running 'Checker.HoldViolations' at                  step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/72-c
+               hecker-holdviolations'…
+[00:03:00] [V] No hold violations found                           checker.py:628
+[00:03:00] [V] Running 'Checker.MaxSlewViolations' at               step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/73-c
+               hecker-maxslewviolations'…
+[00:03:00] [V] No max slew violations found                       checker.py:628
+[00:03:00] [V] Running 'Checker.MaxCapViolations' at                step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/74-c
+               hecker-maxcapviolations'…
+[00:03:00] [V] No max cap violations found                        checker.py:628
+[00:03:00] [V] Running 'Misc.ReportManufacturability' at            step.py:1138
+               'runs/baseline40mhz-drc-20261024T2359352729859Z/75-m
+               isc-reportmanufacturability'…
+[00:03:00] [I] Saving views to                                      state.py:209
+               '/home/jeffd/src/tinytmr-sweep/runs/baseline40mhz-dr
+               c-20261024T2359352729859Z/final'…
+[00:03:00] [I] Flow complete.                                  sequential.py:413
+
+
+[00:03:00] [W] The following warnings were generated by the flow:    flow.py:699
+[00:03:00] [W] [Checker.LintWarnings] 4 Lint warnings found.         flow.py:701
+[00:03:00] [W] [Odb.SetPowerConnections] Macros inside hierarchical  flow.py:701
+               netlists are not currently supported in LibreLane:
+               skipping submodule 'u_feedback_a' of type
+               'tinytmr_voter'. (and 7 similar warnings)
+[00:03:00] [W] [OpenROAD.RepairDesignPostGPL] [RSZ-0020] found 2     flow.py:701
+               floating nets.
+[00:03:00] [W] [OpenROAD.CTS] [STA-1140]                             flow.py:701
+               /home/jeffd/src/tinytmr-tools/pdk/ciel/sky130/version
+               s/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/li
+               bs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1
+               v80.lib line 1, library sky130_fd_sc_hd__tt_025C_1v80
+               already exists. (and 5 similar warnings)
+[00:03:00] [W] [OpenROAD.ResizerTimingPostGRT] [EST-0026] Missing    flow.py:701
+               route to pin _0937_/D in net _0000_. (and 1000
+               similar warnings)
+[00:03:00] [W] [OpenROAD.DetailedRouting] [DRT-0349] LEF58_ENCLOSURE flow.py:701
+               with no CUTCLASS is not supported. Skipping for layer
+               mcon (and 9 similar warnings)
+[00:03:00] [W] [Checker.WireLength] Threshold for                    flow.py:701
+               Threshold-surpassing long wires is not set. The
+               checker will be skipped.
+[00:03:00] [W] [OpenROAD.IRDropReport] 'VSRC_LOC_FILES' was not      flow.py:701
+               given a value, which may make the results of IR drop
+               analysis inaccurate. If you are not integrating a
+               top-level chip for manufacture, you may ignore this
+               warning, otherwise, see the documentation for
+               'VSRC_LOC_FILES'.

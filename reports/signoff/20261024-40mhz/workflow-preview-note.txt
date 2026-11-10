@@ -1,0 +1,7 @@
+The local verification snapshot and verified-input hashes correspond to frozen commit 0352c360284a5ce06d62d85775fbfd7c850725e2.
+Hosted GDS and gate-level simulation passed for that commit; the stamped tt_submission artifact digest is c4a6e8431f388f6cf4fbaadb753f5a4f0f56f0f26d6c8fb7eab1969b98394150.
+The following workflow-only correction makes the optional viewer publication opt-in because GitHub Pages was not configured and returned HTTP 404.
+No RTL, physical configuration, SDC, test, library/tool version, or fabrication-check job is changed by that correction. The render remains an artifact.
+Workflow edits now trigger the GDS, documentation, RTL and C# helper checks together so the corrected submission revision receives all checks on the same commit.
+The C# path guard also rejects filesystem-root overlap, with regression fixtures for that boundary. This helper-only correction does not change the verified physical inputs.
+Hosted checks are rerun for the corrected workflow revision; the portal should use the latest revision after its required checks pass.

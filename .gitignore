@@ -1,0 +1,23 @@
+__pycache__/
+.pytest_cache/
+*.vcd
+*.fst
+sim_build/
+results.xml
+
+# Local ASIC build artifacts and support tooling
+tt/
+runs/
+test/gate_level_netlist.v
+test/sim_build/
+test/results.xml
+
+# Archived clock and placement experiment runs
+physical-sweeps/
+
+# Generated support-tool configuration and local verification environments
+src/config_merged.json
+src/user_config.json
+.precheck-venv/
+tools/**/bin/
+tools/**/obj/

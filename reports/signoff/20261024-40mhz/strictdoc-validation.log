@@ -1,0 +1,37 @@
+Parallelization: Enabled
+Step 'Parse SDoc project tree' start.
+Step 'Find and read SDoc files' start.
+Completed finding SDoc and assets ........................... 0.00s
+Reading SDOC: 2 tasks
+..
+Completed parsing all documents ............................. 0.09s
+Completed building document tree ............................ 0.09s
+Step 'Find and read SDoc files' took: 0.09 sec.
+Step 'Build traceability graph' start.
+Step 'Build traceability graph' took: 0.01 sec.
+Step 'Parse SDoc project tree' took: 0.17 sec.
+Step 'Export SDoc' start.
+Copying StrictDoc's assets: 47 files.
+Copying StrictDoc's assets: 2 files.
+Copying StrictDoc's assets: 1 files.
+Copying StrictDoc's assets: 26 files.
+Copying StrictDoc's assets: 1 files.
+Copying StrictDoc's assets: 1 files.
+Copying StrictDoc's assets: 4 files.
+Copying StrictDoc's assets: 3 files.
+Copying StrictDoc's assets: 2 files.
+Copying StrictDoc's assets: 2 files.
+Copying StrictDoc's assets: 2 files.
+Copying StrictDoc's assets: 3 files.
+Step 'Export static HTML search index' start.
+Build search index .......................................... 0.00s
+Serialize search index to JS ................................ 0.00s
+Serialize lookup map {MID => node} to JS .................... 0.00s
+Step 'Export static HTML search index' took: 0.01 sec.
+Skip: 2 tasks
+Export to HTML: 2 tasks
+..
+Export completed. Documentation tree can be found at:
+/mnt/c/Users/jeffd/Documents/Codex/2026-10-20/ru/outputs/TinyTMR/final-requirements-html/html
+Step 'Export SDoc' took: 2.25 sec.
+Total execution time ........................................ 3.97s

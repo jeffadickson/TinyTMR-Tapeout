@@ -1,0 +1,42 @@
+[DOCUMENT]
+TITLE: TinyTMR forty MHz fabrication candidate
+
+[REQUIREMENT]
+UID: TMR-FAB-001
+TITLE: Reproducible clock and tool baseline
+STATEMENT: >>>
+The candidate shall use a 25 ns clock period and declare a 40 MHz interface clock. The submission workflow shall pin the tested LibreLane version and support-tool revision.
+<<<
+RATIONALE: >>>
+Implementation: src/config.json, info.yaml, .github/workflows/gds.yaml. Verification: resolved layout configuration and tool metadata retained in reports/signoff.
+<<<
+
+[REQUIREMENT]
+UID: TMR-FAB-002
+TITLE: Physical and electrical verification
+STATEMENT: >>>
+The candidate shall pass Magic DRC, KLayout DRC, LVS, setup, hold and maximum-transition checks at all configured signoff corners without widening electrical limits to suppress violations.
+<<<
+RATIONALE: >>>
+Implementation: src/config.json all-corner checks and C# PhysicalReview launcher. Verification: exact-run state metrics, tool logs and Tiny Tapeout precheck. A failing run is evidence of an unmet requirement, not a passing candidate.
+<<<
+
+[REQUIREMENT]
+UID: TMR-FAB-003
+TITLE: Functional verification at the baseline clock
+STATEMENT: >>>
+The RTL and mapped gate-level candidate shall pass the public-pin cocotb suite with a 25 ns test clock. Verification shall distinguish functional simulation from extracted-delay timing analysis.
+<<<
+RATIONALE: >>>
+Implementation: test/test.py and test/Makefile. Verification: retained RTL and gate-level XML/log results. RTL coverage uses Verilator line, branch, expression and toggle counters; STA independently checks extracted timing.
+<<<
+
+[REQUIREMENT]
+UID: TMR-FAB-004
+TITLE: Replica preservation and placement evidence
+STATEMENT: >>>
+The final mapped netlist shall retain 24 replica storage flops and three distinct named feedback-voter cones. The final DEF shall be audited for replica and request/reset synchronizer placement without inferring radiation qualification from cell-origin distances.
+<<<
+RATIONALE: >>>
+Implementation: RTL keep attributes and tools/ICMOS.PhysicalReview/LayoutAudit.cs. Verification: layout-audit.json plus final mapped netlist/DEF. No minimum radiation isolation distance or MTBF is claimed.
+<<<

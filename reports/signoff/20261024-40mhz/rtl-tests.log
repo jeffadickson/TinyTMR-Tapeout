@@ -1,0 +1,20 @@
+ 21731.01ns INFO     cocotb.regression                  running test.scan_and_upset_counters (9/9)
+                                                            Snapshot all TMR banks, distinguish episodes from injected faults.
+ 23521.01ns INFO     cocotb.regression                  test.scan_and_upset_counters passed
+ 23521.01ns INFO     cocotb.regression                  ***********************************************************************************************************
+                                                        ** TEST                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************
+                                                        ** test.single_fault_masks_and_scrubs                  PASS       12973.00           0.03     381551.96  **
+                                                        ** test.double_fault_scrub_cements_bad_majority        PASS         850.00           0.00     429606.89  **
+                                                        ** test.held_request_only_executes_once_and_rearms     PASS        1466.00           0.01     254673.10  **
+                                                        ** test.enable_backpressure_and_telemetry              PASS        1377.00           0.01     180057.29  **
+                                                        ** test.voter_transient_containment                    PASS         675.00           0.00     277498.91  **
+                                                        ** test.triplicated_command_decode_fault_containment   PASS        2829.00           0.01     241115.65  **
+                                                        ** test.three_independent_controllers_rearm            PASS         883.00           0.00     259555.80  **
+                                                        ** test.output_combiner_fault_truth_table              PASS         678.00           0.00     202853.53  **
+                                                        ** test.scan_and_upset_counters                        PASS        1790.00           0.01     134062.38  **
+                                                        ***********************************************************************************************************
+                                                        ** TESTS=9 PASS=9 FAIL=0 SKIP=0                                   23521.01           0.09     251207.64  **
+                                                        ***********************************************************************************************************
+- :0: Verilog $finish
+make: Leaving directory '/home/jeffd/src/tinytmr-sweep/test'

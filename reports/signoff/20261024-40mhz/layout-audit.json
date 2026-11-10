@@ -1,0 +1,182 @@
+{
+  "ReplicaStorageCount": 24,
+  "FeedbackVoterCellCounts": {
+    "u_feedback_a": 16,
+    "u_feedback_b": 16,
+    "u_feedback_c": 16
+  },
+  "RequestSynchronizerOriginDistanceUm": 7.41676479335836,
+  "ResetSynchronizerOriginDistanceUm": 5.5172456896534845,
+  "MinimumCrossBankStorageOriginDistanceUm": 8.275868534480228,
+  "Storage": [
+    {
+      "Signal": "req_meta",
+      "Instance": "_0933_",
+      "XUm": 115.46,
+      "YUm": 97.92
+    },
+    {
+      "Signal": "req_sync",
+      "Instance": "_0934_",
+      "XUm": 122.36,
+      "YUm": 100.64
+    },
+    {
+      "Signal": "reset_meta",
+      "Instance": "_0935_",
+      "XUm": 144.9,
+      "YUm": 100.64
+    },
+    {
+      "Signal": "reset_sync",
+      "Instance": "_0936_",
+      "XUm": 145.82,
+      "YUm": 106.08
+    },
+    {
+      "Signal": "replica_c[0]",
+      "Instance": "_0948_",
+      "XUm": 120.52,
+      "YUm": 10.88
+    },
+    {
+      "Signal": "replica_c[1]",
+      "Instance": "_0949_",
+      "XUm": 95.22,
+      "YUm": 10.88
+    },
+    {
+      "Signal": "replica_c[2]",
+      "Instance": "_0950_",
+      "XUm": 142.14,
+      "YUm": 10.88
+    },
+    {
+      "Signal": "replica_c[3]",
+      "Instance": "_0951_",
+      "XUm": 144.9,
+      "YUm": 46.24
+    },
+    {
+      "Signal": "replica_c[4]",
+      "Instance": "_0952_",
+      "XUm": 107.18,
+      "YUm": 46.24
+    },
+    {
+      "Signal": "replica_c[5]",
+      "Instance": "_0953_",
+      "XUm": 106.26,
+      "YUm": 10.88
+    },
+    {
+      "Signal": "replica_c[6]",
+      "Instance": "_0954_",
+      "XUm": 109.02,
+      "YUm": 65.28
+    },
+    {
+      "Signal": "replica_c[7]",
+      "Instance": "_0955_",
+      "XUm": 141.68,
+      "YUm": 81.6
+    },
+    {
+      "Signal": "replica_b[0]",
+      "Instance": "_0956_",
+      "XUm": 120.98,
+      "YUm": 40.8
+    },
+    {
+      "Signal": "replica_b[1]",
+      "Instance": "_0957_",
+      "XUm": 75.9,
+      "YUm": 35.36
+    },
+    {
+      "Signal": "replica_b[2]",
+      "Instance": "_0958_",
+      "XUm": 143.52,
+      "YUm": 38.08
+    },
+    {
+      "Signal": "replica_b[3]",
+      "Instance": "_0959_",
+      "XUm": 142.14,
+      "YUm": 54.4
+    },
+    {
+      "Signal": "replica_b[4]",
+      "Instance": "_0960_",
+      "XUm": 90.16,
+      "YUm": 48.96
+    },
+    {
+      "Signal": "replica_b[5]",
+      "Instance": "_0961_",
+      "XUm": 95.22,
+      "YUm": 38.08
+    },
+    {
+      "Signal": "replica_b[6]",
+      "Instance": "_0962_",
+      "XUm": 83.72,
+      "YUm": 87.04
+    },
+    {
+      "Signal": "replica_b[7]",
+      "Instance": "_0963_",
+      "XUm": 142.6,
+      "YUm": 92.48
+    },
+    {
+      "Signal": "replica_a[0]",
+      "Instance": "_0964_",
+      "XUm": 107.64,
+      "YUm": 29.92
+    },
+    {
+      "Signal": "replica_a[1]",
+      "Instance": "_0965_",
+      "XUm": 66.7,
+      "YUm": 16.32
+    },
+    {
+      "Signal": "replica_a[2]",
+      "Instance": "_0966_",
+      "XUm": 144.9,
+      "YUm": 29.92
+    },
+    {
+      "Signal": "replica_a[3]",
+      "Instance": "_0967_",
+      "XUm": 144.9,
+      "YUm": 62.56
+    },
+    {
+      "Signal": "replica_a[4]",
+      "Instance": "_0968_",
+      "XUm": 112.24,
+      "YUm": 54.4
+    },
+    {
+      "Signal": "replica_a[5]",
+      "Instance": "_0969_",
+      "XUm": 67.62,
+      "YUm": 27.2
+    },
+    {
+      "Signal": "replica_a[6]",
+      "Instance": "_0970_",
+      "XUm": 79.58,
+      "YUm": 62.56
+    },
+    {
+      "Signal": "replica_a[7]",
+      "Instance": "_0971_",
+      "XUm": 125.58,
+      "YUm": 68
+    }
+  ],
+  "Limitations": "Cell-origin geometry only; no diffusion spacing, route delay, MTBF or radiation qualification is inferred."
+}
