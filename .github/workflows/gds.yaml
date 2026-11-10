@@ -1,0 +1,59 @@
+name: gds
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'info.yaml'
+      - 'test/**'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+jobs:
+  gds:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+
+      - name: Build GDS
+        uses: TinyTapeout/tt-gds-action@ttsky26d
+        with:
+          pdk: sky130A
+          librelane-version: '3.0.14'
+          tools-ref: '01d5d2814fa9dd61e9d211e0b235a4a592a9316a'
+
+  precheck:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Run Tiny Tapeout Precheck
+        uses: TinyTapeout/tt-gds-action/precheck@ttsky26d
+        with:
+          tools-ref: '01d5d2814fa9dd61e9d211e0b235a4a592a9316a'
+
+  gl_test:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+
+      - name: GL test
+        uses: TinyTapeout/tt-gds-action/gl_test@ttsky26d
+
+  viewer:
+    # Publishing a public viewer is optional; fabrication checks above remain mandatory.
+    # Enable only after configuring GitHub Pages and setting this repository variable.
+    if: ${{ vars.TINYTMR_ENABLE_VIEWER == 'true' }}
+    needs: gds
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    steps:
+      - uses: TinyTapeout/tt-gds-action/viewer@ttsky26d
